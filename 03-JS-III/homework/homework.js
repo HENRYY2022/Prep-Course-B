@@ -10,7 +10,7 @@ function imprimirSumaNumeros() {
     // Tu código:
     var contador= 0;
     for (i=0;i<=10;i++){
-    contador=contador+i;
+        contador=contador+i;
     }
     return contador;
 
@@ -20,31 +20,41 @@ function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
-  var pares = [];
-    for( i= 0;i<array.length;i++){
-    if(i % 2 ==0){
-        pares.push(array[i]);
+  
+  var nuevoArray = [];
+  for(i= 0; i < array.length; i++) {
+    if(array[i] % 2 === 0) {
+      nuevoArray.push(array[i]);
     }
-    return pares(encuentraPares());
+  }
+  return nuevoArray;
 }
-}
+
 
 function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
+ 
 }
 
 function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
+  var array = [];
+  var suma = 0;
+  for ( let i=0; i < array.lentgh; i++){
+        suma=suma + array[i];
+  }
+  return suma;
 }
 
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
-  return num.length;
+  var numer = num.length;
+  return numer;
 }
   
   
