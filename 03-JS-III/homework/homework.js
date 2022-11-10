@@ -41,11 +41,12 @@ function elevaAlCuadrado(array){
 function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
-  // Tu código:
-  var array = [];
+  // Tu código:;
   var suma = 0;
-  for ( let i=0; i < array.lentgh; i++){
-        suma=suma + array[i];
+  for ( i=0; i <array.length; i++){
+   if ( array [i] < 0){
+    suma = suma + array[i];
+   }
   }
   return suma;
 }
@@ -53,8 +54,9 @@ function sumaArray(array){
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
-  var numer = num.length;
-  return numer;
+  var ilength = (''+num).length;
+  return ilength;
+
 }
   
   
