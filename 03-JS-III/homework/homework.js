@@ -35,6 +35,9 @@ function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
+  var elarray = array.map(num => num **2);
+
+  return elarray;
  
 }
 
@@ -42,14 +45,18 @@ function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:;
-  var suma = 0;
-  for ( i=0; i <array.length; i++){
-   if ( array [i] < 0){
-    suma = suma + array[i];
-   }
-  }
-  return suma;
+        
+    var suma = 0;
+    
+    array.forEach (function(numero){
+        suma += numero;
+    });
+
+    return suma;
+
 }
+
+
 
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
